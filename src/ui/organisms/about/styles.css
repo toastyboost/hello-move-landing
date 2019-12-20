@@ -17,12 +17,27 @@
   margin-right: 20px;
 }
 
+@media screen and (max-width: 960px) {
+  .about-leftside,
+  .about-rightside {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+}
+
 .about-leftside {
   height: 100%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-image: url("./static/spain.jpg");
+}
+
+@media screen and (max-width: 960px) {
+  .about-leftside {
+    margin-bottom: 20px;
+  }
 }
 
 .about-rightside {
@@ -32,6 +47,13 @@
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
+}
+
+@media screen and (max-width: 960px) {
+  .about-rightside {
+    min-height: auto;
+    padding: 30px 20px;
+  }
 }
 
 .about-title {

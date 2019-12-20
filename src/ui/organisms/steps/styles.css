@@ -10,6 +10,13 @@
   margin-bottom: 105px;
 }
 
+@media screen and (max-width: 960px) {
+  .steps-title {
+    max-width: 640px;
+    margin: 0 auto 45px auto;
+  }
+}
+
 .steps-list {
   display: flex;
   flex-wrap: wrap;
@@ -21,6 +28,12 @@
   width: 100%;
   margin-left: 10px;
   margin-right: 10px;
+}
+
+@media screen and (max-width: 960px) {
+  .steps-item {
+    max-width: 640px;
+  }
 }
 
 .steps-item[data-item="0"]::before {
@@ -64,6 +77,15 @@
   border-radius: 50%;
   font-weight: bold;
   margin-bottom: 130px;
+}
+
+@media screen and (max-width: 960px) {
+  .steps-item::before {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 80px;
+  }
 }
 
 .steps-subtitle {

@@ -8,6 +8,7 @@
 body {
   font-family: "Graphik", sans-serif;
   line-height: 1.15;
+  min-width: 320px;
 }
 
 .wrap {
@@ -15,6 +16,8 @@ body {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 h1 {
@@ -25,4 +28,10 @@ h1 {
 p {
   font-weight: 300;
   margin: 0;
+}
+
+@media screen and (max-width: 960px) {
+  .wrap {
+    max-width: 640px;
+  }
 }

@@ -12,6 +12,12 @@ import {
   ContinueSection,
 } from "src/ui/organisms";
 
+import "src/static/fonts/fonts.css";
+
+import "src/styles/normalize.css";
+import "src/styles/default.css";
+import "src/styles/common.css";
+
 export const App = () => {
   return (
     <>

@@ -6,7 +6,7 @@ export const AboutSection = () => {
   return (
     <div className="about">
       <div className="wrap wrap-about">
-        <div className="about-leftside">left</div>
+        <div className="about-leftside" />
         <div className="about-rightside">
           <div className="section-title about-title">О программе</div>
           <p className="about-desc">

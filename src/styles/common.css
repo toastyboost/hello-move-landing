@@ -18,11 +18,18 @@
   background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 960px) {
+  .benefits-icon {
+    min-width: 40px;
+    min-height: 40px;
+  }
+}
+
 .benefits-content {
-  min-height: 65px;
+  min-height: 60px;
   display: flex;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: space-around;
 }
 
 .benefits-title {
@@ -36,8 +43,13 @@
 
 .benefits-text {
   width: 100%;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 1.55;
+  font-weight: 400;
+}
+
+.benefits-text.star {
+  letter-spacing: 6px;
 }
 
 .section-title {

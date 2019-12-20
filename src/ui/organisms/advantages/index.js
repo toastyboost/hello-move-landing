@@ -10,14 +10,14 @@ export const AdvantagesSection = () => {
       <div className="wrap">
         <div className="section-title advantages-title">Преимущества программы</div>
         <div className="advantages-list">
-          {advantagesList.map(({ title, text, count }) => (
-            <>
+          {advantagesList.map(({ title, text, count }, key) => (
+            <React.Fragment key={key}>
               <div className="advantages-item" data-item={count}>
                 <div className="advantages-subtitle">{title}</div>
-                <p className="advantages-text">{text}</p>
+                <p className="advantages-text" dangerouslySetInnerHTML={{ __html: text }} />
               </div>
               <div className="advantage-separator" />
-            </>
+            </React.Fragment>
           ))}
         </div>
       </div>

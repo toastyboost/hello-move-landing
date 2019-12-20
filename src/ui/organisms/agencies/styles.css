@@ -20,6 +20,7 @@
   color: #444242;
   max-width: 560px;
   margin: 0 auto 90px auto;
+  font-weight: 100;
 }
 
 .agencies-benefits-item {
@@ -30,6 +31,11 @@
 .agencies-benefits-title {
   color: #4a028a;
   margin-bottom: 14px;
+}
+@media screen and (max-width: 960px) {
+  .benefits-item.agencies-benefits-item {
+    align-items: flex-start;
+  }
 }
 
 .agencies-benefits-icon[data-icon="chat"] {
@@ -44,8 +50,31 @@
   background-image: url("./static/icon-user.svg");
 }
 
-.agencies-benefits-text {
+.benefits-text.agencies-benefits-text {
   color: #706f6f;
+  font-size: 18px;
+  font-weight: 300;
+  width: 58%;
+}
+
+@media screen and (max-width: 960px) {
+  .benefits-text.agencies-benefits-text {
+    width: 100%;
+  }
+}
+
+.benefits-btn {
+  background-color: #4a028a;
+  color: #fff;
+  height: 60px;
+  margin-left: auto;
+}
+
+@media screen and (max-width: 960px) {
+  .benefits-btn {
+    margin-top: 24px;
+    margin-left: 0;
+  }
 }
 
 .agencies-cta {

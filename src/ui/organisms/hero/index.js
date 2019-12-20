@@ -16,12 +16,12 @@ export const HeroSection = () => {
         </div>
         <div className="hero-rightside">
           <div className="benefits hero-benefits">
-            {benefitsList.map(({ title, text, icon }) => (
-              <div className="benefits-item">
+            {benefitsList.map(({ title, text, icon }, key) => (
+              <div className="benefits-item" key={key}>
                 <div className="benefits-icon hero-benefits-icon" data-icon={icon} />
                 <div className="benefits-content">
                   <div className="benefits-title" dangerouslySetInnerHTML={{ __html: title }} />
-                  <p className="benefits-text">{text}</p>
+                  <p className={`benefits-text ${icon}`}>{text}</p>
                 </div>
               </div>
             ))}
