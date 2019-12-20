@@ -1,0 +1,57 @@
+.cashback {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #4a028a;
+  height: 80vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./static/employes.jpg");
+  position: relative;
+  overflow: hidden;
+}
+
+.cashback::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(74, 2, 138, 0.8), rgba(74, 2, 138, 0.8));
+  z-index: 1;
+  height: 100%;
+}
+
+.cashback-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+}
+
+.cashback-leftside {
+  max-width: 760px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  z-index: 100;
+}
+
+.cashback-title {
+  color: #fff;
+  padding: 24px 0 38px 0;
+}
+
+.cashback-desc {
+  color: #fff;
+  padding: 0 0 30px 0;
+  font-size: 18px;
+  line-height: 1.55;
+  opacity: 0.7;
+}
+
+.cashback-btn {
+  color: #fff;
+  background-color: #8400a0;
+  border-radius: 0;
+}

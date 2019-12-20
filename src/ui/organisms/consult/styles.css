@@ -1,0 +1,47 @@
+.consult {
+  min-height: 500px;
+  background-attachment: scroll;
+  position: relative;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("./static/workplace.png");
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.consult::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-image: linear-gradient(to top, rgba(74, 2, 138, 0.8), rgba(74, 2, 138, 0.8));
+  z-index: 1;
+  height: 100%;
+}
+
+.consult-title,
+.consult-cta {
+  position: relative;
+  z-index: 100;
+}
+
+.consult-title {
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+.consult-cta {
+  margin-top: 70px;
+}
+
+.consult-btn {
+  color: #ffffff;
+  background-color: #8400a0;
+}

@@ -1,0 +1,82 @@
+.hero {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+  min-height: 546px;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("./static/hero.jpg");
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90vh;
+  background-image: linear-gradient(to top, rgba(74, 2, 138, 0.8), rgba(74, 2, 138, 0.8));
+  z-index: 1;
+  height: 100%;
+}
+
+.hero-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.hero-title,
+.hero-desc {
+  z-index: 100;
+  position: relative;
+}
+
+.hero-title {
+  font-size: 72px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.hero-desc {
+  max-width: 560px;
+  color: #fff;
+  font-size: 22px;
+  line-height: 1.55;
+  font-weight: 300;
+}
+
+.hero-leftside {
+  width: 50%;
+}
+
+.hero-rightside {
+  width: 50%;
+}
+
+.hero-benefits {
+  align-content: space-around;
+  align-items: center;
+  height: 100%;
+  position: relative;
+  z-index: 100;
+  color: #fff;
+  min-height: 326px;
+  padding-left: 80px;
+}
+
+.hero-benefits-icon[data-icon="calendar"] {
+  background-image: url("./static/icon-calendar.svg");
+}
+
+.hero-benefits-icon[data-icon="star"] {
+  background-image: url("./static/icon-star.svg");
+}
+
+.hero-benefits-icon[data-icon="time"] {
+  background-image: url("./static/icon-time.svg");
+}

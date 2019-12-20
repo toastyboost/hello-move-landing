@@ -1,0 +1,82 @@
+.steps {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.steps-title {
+  color: #fff;
+  text-align: center;
+  color: #4a0186;
+  margin-bottom: 105px;
+}
+
+.steps-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.steps-item {
+  max-width: 300px;
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.steps-item[data-item="0"]::before {
+  content: "1";
+}
+.steps-item[data-item="1"]::before {
+  content: "2";
+}
+.steps-item[data-item="2"]::before {
+  content: "3";
+}
+.steps-item[data-item="3"]::before {
+  content: "4";
+}
+.steps-item[data-item="4"]::before {
+  content: "5";
+}
+.steps-item[data-item="5"]::before {
+  content: "6";
+}
+.steps-item[data-item="6"]::before {
+  content: "7";
+}
+.steps-item[data-item="7"]::before {
+  content: "8";
+}
+.steps-item[data-item="8"]::before {
+  content: "9";
+}
+
+.steps-item::before {
+  background-color: #4a028a;
+  color: #fff;
+  float: left;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 60px;
+  margin-right: 20px;
+  border-radius: 50%;
+  font-weight: bold;
+  margin-bottom: 130px;
+}
+
+.steps-subtitle {
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 1.35;
+  font-weight: 600;
+  color: #000;
+}
+
+.steps-text {
+  font-size: 14px;
+  line-height: 1.55;
+  font-weight: 300;
+  color: #000;
+}

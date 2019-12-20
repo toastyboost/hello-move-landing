@@ -1,0 +1,41 @@
+.continue {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #4a028a;
+}
+
+.continue-title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.continue-desc {
+  color: #fff;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.continue-cta {
+  display: flex;
+  justify-content: center;
+  margin-top: 70px;
+}
+
+.get-btn,
+.call-btn {
+  margin: 0 10px;
+}
+
+.get-btn {
+  color: #4a028a;
+  background-color: #ffffff;
+}
+
+.call-btn {
+  color: #ffffff;
+  background-color: #8400a0;
+}
